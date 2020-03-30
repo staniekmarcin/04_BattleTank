@@ -1,14 +1,25 @@
-// Copyright 1998-2019 Epic Games, Inc. All Rights Reserved.
+// Fill out your copyright notice in the Description page of Project Settings.
 
 using UnrealBuildTool;
 using System.Collections.Generic;
 
 public class BattleTankTarget : TargetRules
 {
-	public BattleTankTarget( TargetInfo Target) : base(Target)
+	public BattleTankTarget(TargetInfo Target)
 	{
 		Type = TargetType.Game;
-		DefaultBuildSettings = BuildSettingsVersion.V2;
-		ExtraModuleNames.AddRange( new string[] { "BattleTank" } );
+	}
+
+	//
+	// TargetRules interface.
+	//
+
+	public override void SetupBinaries(
+		TargetInfo Target,
+		ref List<UEBuildBinaryConfiguration> OutBuildBinaryConfigurations,
+		ref List<string> OutExtraModuleNames
+		)
+	{
+		OutExtraModuleNames.AddRange( new string[] { "BattleTank" } );
 	}
 }
