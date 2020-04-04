@@ -7,6 +7,7 @@
 #include "Tank.generated.h" //new incldues above
 
 class UTankBarrel;
+class TankAimingComponent;
 
 UCLASS()
 class BATTLETANK_API ATank : public APawn
@@ -28,7 +29,7 @@ private:
 
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-	
+
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent *InputComponent) override;
 
