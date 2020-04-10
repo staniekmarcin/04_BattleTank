@@ -21,6 +21,6 @@ public:
 
 	// Max force per track in N
 	UPROPERTY(EditDefaultsOnly)
-	float TrackMaxDrivingForce = 400000; // asume 1g acceleration and 40t tank
+	float TrackMaxDrivingForce = 40000000; // asume 1g acceleration and 40t tank
 	
 };
