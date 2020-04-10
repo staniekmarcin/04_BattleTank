@@ -19,5 +19,8 @@ public:
 	UFUNCTION(BlueprintCallable, Category = Input)
 	void SetThrottle(float Throttle);
 
-	// TODO clamp actual throttle value so player can't over-drive
+	// Max force per track in N
+	UPROPERTY(EditDefaultsOnly)
+	float TrackMaxDrivingForce = 400000; // asume 1g acceleration and 40t tank
+	
 };
