@@ -12,6 +12,7 @@ BattleTank/.vs/
 .vs/s
 
 *.vs
+*.vscode
 Content/StarterContent/*
 battletank_keybinding.png
 # Compiled Object files
