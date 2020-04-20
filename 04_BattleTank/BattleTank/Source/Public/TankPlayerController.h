@@ -24,9 +24,11 @@ protected:
 	UFUNCTION()
 	void OnPossedTankDeath();
 private:
-	void SetPawn(APawn* InPawn);
 
 	virtual void BeginPlay() override;
+
+	void SetPawn(APawn* InPawn);
+	
 
 	virtual void Tick(float DeltaTime) override;
 
