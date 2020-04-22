@@ -1,4 +1,4 @@
-# GameDev
+# game-dev
 part of game development course in UE4.
 
 01_TripleX  
