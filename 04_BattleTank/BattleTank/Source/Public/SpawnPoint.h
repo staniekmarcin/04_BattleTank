@@ -24,9 +24,10 @@ public:
 	// Called every frame
 	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
-private:
 	// Config
-	UPROPERTY(EditDefaultsOnly, Category = "Setup")
+	UPROPERTY(EditAnywhere = Components, BlueprintReadWrite, Category = "Setup")
 		TSubclassOf<AActor> SpawnClass;
+private:
+	
 
 };
