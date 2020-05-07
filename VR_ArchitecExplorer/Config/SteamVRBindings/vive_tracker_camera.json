@@ -8,8 +8,8 @@
 		{
 			"sources": [
 				{
-					"mode": "trigger",
-					"path": "/user/hand/right/input/trigger",
+					"mode": "button",
+					"path": "/user/hand/left/input/grip",
 					"inputs":
 					{
 						"click":
@@ -19,13 +19,62 @@
 					}
 				},
 				{
-					"mode": "trigger",
-					"path": "/user/hand/left/input/trigger",
+					"mode": "dpad",
+					"path": "/user/hand/left/input/trackpad",
+					"parameters":
+					{
+						"sub_mode": "click"
+					},
 					"inputs":
 					{
-						"click":
+						"north":
 						{
-							"output": "/actions/main/in/Teleport"
+							"output": "/actions/main/in/Forward_Vive axis"
+						}
+					}
+				},
+				{
+					"mode": "dpad",
+					"path": "/user/hand/left/input/trackpad",
+					"parameters":
+					{
+						"sub_mode": "click"
+					},
+					"inputs":
+					{
+						"east":
+						{
+							"output": "/actions/main/in/Right_Vive axis"
+						}
+					}
+				},
+				{
+					"mode": "dpad",
+					"path": "/user/hand/left/input/trackpad",
+					"parameters":
+					{
+						"sub_mode": "click"
+					},
+					"inputs":
+					{
+						"west":
+						{
+							"output": "/actions/main/in/Left_Vive axis"
+						}
+					}
+				},
+				{
+					"mode": "dpad",
+					"path": "/user/hand/left/input/trackpad",
+					"parameters":
+					{
+						"sub_mode": "click"
+					},
+					"inputs":
+					{
+						"south":
+						{
+							"output": "/actions/main/in/Backward_Vive axis"
 						}
 					}
 				}

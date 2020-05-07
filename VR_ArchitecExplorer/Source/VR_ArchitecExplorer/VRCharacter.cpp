@@ -99,8 +99,15 @@ void AVRCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
 	PlayerInputComponent->BindAxis(TEXT("Forward"), this, &AVRCharacter::MoveForward);
+	PlayerInputComponent->BindAxis(TEXT("Forward_Vive"), this, &AVRCharacter::MoveForward);
+	PlayerInputComponent->BindAxis(TEXT("Backward_Vive"), this, &AVRCharacter::MoveForward);
+
 	PlayerInputComponent->BindAxis(TEXT("Right"), this, &AVRCharacter::MoveRight);
+	PlayerInputComponent->BindAxis(TEXT("Right_Vive"), this, &AVRCharacter::MoveRight);
+	PlayerInputComponent->BindAxis(TEXT("Left_Vive"), this, &AVRCharacter::MoveRight);
+
 	PlayerInputComponent->BindAction(TEXT("Teleport"), IE_Released, this, &AVRCharacter::BeginTeleport);
+
 }
 
 void AVRCharacter::MoveForward(float throttle)
