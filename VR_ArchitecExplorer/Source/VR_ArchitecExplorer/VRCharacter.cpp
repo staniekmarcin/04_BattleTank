@@ -65,6 +65,7 @@ void AVRCharacter::BeginPlay()
 		RightController->SetOwner(this);
 	}
 
+	LeftController->PairController(RightController);
 }
 
 // Called every frame
@@ -280,10 +281,10 @@ void AVRCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 	PlayerInputComponent->BindAction(TEXT("Teleport"), IE_Released, this, &AVRCharacter::BeginTeleport);
 
 	PlayerInputComponent->BindAction(TEXT("GripLeft"), IE_Pressed, this, &AVRCharacter::GripLeft);
-	PlayerInputComponent->BindAction(TEXT("ReleaseLeft"), IE_Released, this, &AVRCharacter::ReleaseLeft);
+	PlayerInputComponent->BindAction(TEXT("GripLeft"), IE_Released, this, &AVRCharacter::ReleaseLeft);
 
 	PlayerInputComponent->BindAction(TEXT("GripRight"), IE_Pressed, this, &AVRCharacter::GripRight);
-	PlayerInputComponent->BindAction(TEXT("ReleaseRight"), IE_Released, this, &AVRCharacter::ReleaseRight);
+	PlayerInputComponent->BindAction(TEXT("GripRight"), IE_Released, this, &AVRCharacter::ReleaseRight);
 
 }
 
