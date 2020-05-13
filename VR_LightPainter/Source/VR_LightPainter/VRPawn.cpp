@@ -5,7 +5,6 @@
 
 #include "Engine/World.h"
 
-// Sets default values
 AVRPawn::AVRPawn()
 {
 	PrimaryActorTick.bCanEverTick = false;
