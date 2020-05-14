@@ -5,6 +5,8 @@
 
 #include "Engine/World.h"
 
+#include "Saving/PainterSaveGame.h"
+
 AVRPawn::AVRPawn()
 {
 	PrimaryActorTick.bCanEverTick = false;
@@ -27,8 +29,8 @@ void AVRPawn::BeginPlay()
 		RightHandController->SetOwner(this);
 	}
 
-
-	
+	UPainterSaveGame* Painting = UPainterSaveGame::Create();
+	Painting->Save();
 	
 }
 
