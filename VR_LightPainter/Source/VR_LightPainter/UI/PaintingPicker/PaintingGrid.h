@@ -24,4 +24,8 @@ public:
 protected:
 	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, meta = (BindWidget))
 	UUniformGridPanel* PaintingGrid;
+
+public:
+	UPROPERTY(EditDefaultsOnly)
+	TSubclassOf<UUserWidget> GridCardClass;
 };
