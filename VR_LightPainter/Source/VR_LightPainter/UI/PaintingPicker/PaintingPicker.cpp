@@ -8,7 +8,7 @@
 
 #include "ActionBar.h"
 
-#include "PaintingGrid.h"
+//#include "PaintingGrid.h"
 
 APaintingPicker::APaintingPicker()
 {
@@ -28,7 +28,7 @@ APaintingPicker::APaintingPicker()
 void APaintingPicker::BeginPlay()
 {
 	Super::BeginPlay();
-
+	
 	UActionBar* ActionBarWidget = Cast<UActionBar>(ActionBar->GetUserWidgetObject());
 	if (ActionBarWidget)
 	{
@@ -38,23 +38,32 @@ void APaintingPicker::BeginPlay()
 	RefreshSlots();
 }
 
+int32 APaintingPicker::GetNumberOfPages() const
+{
+	if (!GetPaintingGrid()) return 0;
+
+	int32 TotalNumberOfSlots = UPainterSaveGameIndex::Load()->GetSlotNames().Num();
+	int32 SlotPerPage = GetPaintingGrid()->GetNumberOfSlots();
+	
+	return FMath::CeilToInt((float)TotalNumberOfSlots / SlotPerPage);
+}
+
 void APaintingPicker:: RefreshSlots()
 {
-	
+	UE_LOG(LogTemp, Warning, TEXT("Number Of pages %d: "), GetNumberOfPages());
 
-	UPaintingGrid* PaintingGridWidget = Cast<UPaintingGrid>(PaintingGrid->GetUserWidgetObject());
-	if (!PaintingGridWidget) return;
+	if (!GetPaintingGrid()) return;
 
-	PaintingGridWidget->AddPaginationDot(true);
-	PaintingGridWidget->AddPaginationDot(false);
-	PaintingGridWidget->AddPaginationDot(false);
+	GetPaintingGrid()->AddPaginationDot(true);
+	GetPaintingGrid()->AddPaginationDot(false);
+	GetPaintingGrid()->AddPaginationDot(false);
 
-	PaintingGridWidget->ClearPaintings();
+	GetPaintingGrid()->ClearPaintings();
 
 	int32 Index = 0;
 	for (FString SlotName : UPainterSaveGameIndex::Load()->GetSlotNames())
 	{
-		PaintingGridWidget->AddPainting(Index, SlotName);
+		GetPaintingGrid()->AddPainting(Index, SlotName);
 		++Index;
 	}
 }
@@ -68,9 +77,8 @@ void APaintingPicker::AddPainting()
 
 void APaintingPicker::ToggleDeleteMode()
 {
-	UPaintingGrid* PaintingGridWidget = Cast<UPaintingGrid>(PaintingGrid->GetUserWidgetObject());
-	if (!PaintingGridWidget) return;
+	if (!GetPaintingGrid()) return;
 
-	PaintingGridWidget->ClearPaintings();
+	GetPaintingGrid()->ClearPaintings();
 }
 

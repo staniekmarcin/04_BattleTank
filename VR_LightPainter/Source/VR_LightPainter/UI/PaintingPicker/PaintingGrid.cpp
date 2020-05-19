@@ -47,3 +47,8 @@ void UPaintingGrid::ClearPaintings()
 		CardContainer->ClearChildren();
 	}
 }
+
+int32 UPaintingGrid::GetNumberOfSlots() const
+{
+	return PaintingGrid->GetChildrenCount();
+}

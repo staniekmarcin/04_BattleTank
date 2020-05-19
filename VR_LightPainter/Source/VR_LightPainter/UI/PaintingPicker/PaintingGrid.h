@@ -27,6 +27,8 @@ public:
 	void AddPaginationDot(bool bActive);
 
 	void ClearPaintings();
+
+	int32 GetNumberOfSlots() const;
 protected:
 	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, meta = (BindWidget))
 	UUniformGridPanel* PaintingGrid;

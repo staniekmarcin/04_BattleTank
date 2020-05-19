@@ -6,6 +6,7 @@
 #include "GameFramework/Actor.h"
 
 #include "Components/WidgetComponent.h"
+#include "PaintingGrid.h"
 
 #include "PaintingPicker.generated.h"
 
@@ -24,16 +25,18 @@ public:
 protected:
 	virtual void BeginPlay() override;
 
-
 private:
 	UPROPERTY(VisibleAnywhere)
 	USceneComponent* Root;
 
 	UPROPERTY(VisibleAnywhere)
-		UWidgetComponent* PaintingGrid;
+	UWidgetComponent* PaintingGrid;
 
 	UPROPERTY(VisibleAnywhere)
-		UWidgetComponent* ActionBar;
+	UWidgetComponent* ActionBar;
+
+	UPaintingGrid* GetPaintingGrid() const { return Cast<UPaintingGrid>(PaintingGrid->GetUserWidgetObject()); }
 
 	void RefreshSlots();
+	int32 GetNumberOfPages() const;
 };
