@@ -4,6 +4,9 @@
 
 #include "CoreMinimal.h"
 #include "VR_LightPainter/HandControllerBase.h"
+
+#include "Components/WidgetComponent.h"
+
 #include "PaletteMenuHandController.generated.h"
 
 /**
@@ -14,4 +17,14 @@ class VR_LIGHTPAINTER_API APaletteMenuHandController : public AHandControllerBas
 {
 	GENERATED_BODY()
 	
+public:
+
+	APaletteMenuHandController();
+
+private:
+
+	// Components
+	UPROPERTY(VisibleAnywhere)
+	UWidgetComponent* PaletteMenu;
+
 };
