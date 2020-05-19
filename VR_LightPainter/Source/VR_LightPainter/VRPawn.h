@@ -24,14 +24,17 @@ protected:
 
 private:
 
-	void RightTriggerPressed() { if (RightPaintBrushHandController) RightPaintBrushHandController->TriggerPressed(); }
-	void RightTriggerRealeased() { if (RightPaintBrushHandController) RightPaintBrushHandController->TriggerReleased(); }
+	void RightTriggerPressed() { if (RightHandController) RightHandController->TriggerPressed(); }
+	void RightTriggerRealeased() { if (RightHandController) RightHandController->TriggerReleased(); }
 
 	void Save();
 
 	// Config
 	UPROPERTY(EditDefaultsOnly)
-	TSubclassOf<AHandControllerBase> PaintBrushHandControllerClass;
+	TSubclassOf<AHandControllerBase> RightHandControllerClass;
+
+	UPROPERTY(EditDefaultsOnly)
+	TSubclassOf<AHandControllerBase> LeftHandControllerClass;
 
 	// Components
 	UPROPERTY(VisibleAnywhere)
@@ -42,6 +45,9 @@ private:
 
 	// References
 	UPROPERTY()
-	AHandControllerBase* RightPaintBrushHandController;
+	AHandControllerBase* RightHandController;
+
+	UPROPERTY()
+	AHandControllerBase* LeftHandController;
 
 };
