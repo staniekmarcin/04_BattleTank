@@ -90,8 +90,7 @@ void APaintingPicker::ToggleDeleteMode()
 
 void APaintingPicker::UpdateCurrentPage(int32 Offset)
 {
-	CurrentPage += FMath::Clamp(CurrentPage + Offset, 0, GetNumberOfPages()-1);
-
+	CurrentPage = FMath::Clamp(CurrentPage + Offset, 0, GetNumberOfPages()-1);
 	Refresh();
 }
 

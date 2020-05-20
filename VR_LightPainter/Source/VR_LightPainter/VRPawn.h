@@ -27,8 +27,8 @@ private:
 	void RightTriggerPressed() { if (RightHandController) RightHandController->TriggerPressed(); }
 	void RightTriggerRealeased() { if (RightHandController) RightHandController->TriggerReleased(); }
 
-	void PaginateRightAxisInput();
-	void PaginateLeftAxisInput();
+	void PaginateRightInput();
+	void PaginateLeftInput();
 
 	void UpdateCurrentPage(int32 Offset);
 	// Config
@@ -58,5 +58,5 @@ private:
 	// State
 	int32 LastPaginationOffset = 0;
 
-	int32 PaginationOffset = 0;
+
 };
