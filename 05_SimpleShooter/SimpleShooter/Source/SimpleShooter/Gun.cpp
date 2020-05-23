@@ -4,6 +4,9 @@
 
 #include "Components/SkeletalMeshComponent.h"
 #include "Kismet/GameplayStatics.h"
+#include "DrawDebugHelpers.h"
+#include "ShooterCharacter.h"
+#include "Kismet/ImportanceSamplingLibrary.h"
 
 AGun::AGun()
 {
@@ -20,6 +23,17 @@ void AGun::PullTrigger()
 {
 	//UE_LOG(LogTemp,Warning,TEXT("SHOT"));
 	UGameplayStatics::SpawnEmitterAttached(MuzzleFlash, Mesh, TEXT("MuzzleFlashSocket"));
+
+	APawn* OwnerPawn = Cast<APawn>(GetOwner());
+	if (OwnerPawn == nullptr) return;
+	AController* OwnerController = OwnerPawn->GetController();
+	if (OwnerController == nullptr) return;
+
+	FVector AimLocation;
+	FRotator AimRotation;
+	OwnerController->GetPlayerViewPoint(AimLocation, AimRotation );
+	
+	DrawDebugCamera(GetWorld(), AimLocation, AimRotation, 90, 2, FColor::Red, true);
 }
 
 void AGun::BeginPlay()
