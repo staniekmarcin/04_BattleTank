@@ -8,7 +8,7 @@ void AShooterAIController::Tick(float DeltaSeconds)
 {
     Super::Tick(DeltaSeconds);
     
-    APawn* PlayerPawn = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
+    /*APawn* PlayerPawn = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
     if (PlayerPawn == nullptr) return;
     
     if (LineOfSightTo(PlayerPawn))
@@ -20,7 +20,7 @@ void AShooterAIController::Tick(float DeltaSeconds)
     {
         ClearFocus(EAIFocusPriority::Gameplay);
         StopMovement();
-    }
+    }*/
 
     // TODO turn off focus when AI is dead
 }
@@ -29,4 +29,8 @@ void AShooterAIController::BeginPlay()
 {
     Super::BeginPlay();
 
+    if (AIBehavior != nullptr)
+    {
+        RunBehaviorTree(AIBehavior);
+    }
 }
