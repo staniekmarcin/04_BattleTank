@@ -3,6 +3,8 @@ part of game development course in UE4.
 
 ### 05_SimpleShooter
 third-person shooter (without AssetPacks) <sub><sup>UE 4.25</sup></sub>
+### BP_Games
+basics of UE4 with Blueprints <sub><sup>UE 4.25</sup></sub>
 ### VR_LightPainter
 3D painting interface <sub><sup>UE 4.24.3</sup></sub>
 ### VR_ArchitecExplorer
@@ -15,3 +17,4 @@ level building and overlaping actors <sub><sup>UE 4.24.3</sup></sub>
 terminal game <sub><sup>UE 4.24.3</sup></sub>
 ### 01_TripleX
 basics of C++
+
