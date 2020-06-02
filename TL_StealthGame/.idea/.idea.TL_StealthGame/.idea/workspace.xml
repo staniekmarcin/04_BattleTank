@@ -20,47 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c82fc845-1b49-41a1-afe5-dfa7486ef212" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.TL_StealthGame/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TL_StealthGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TL_StealthGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.TL_StealthGame/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TL_StealthGame/riderModule.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/TL_StealthGameEditor.target" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/TL_StealthGameEditor.target" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Binaries/Win64/UE4Editor.modules" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/Win64/UE4Editor.modules" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultGame.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultGame.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/BP_ObjectiveActor.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/BP_ObjectiveActor.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/FirstPersonCPP/Blueprints/FirstPersonProjectile.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/FirstPersonCPP/Blueprints/FirstPersonProjectile.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/SourceFileCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/SourceFileCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/TL_StealthGameEditor/ActionHistory.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/TL_StealthGameEditor/ActionHistory.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/TL_StealthGameEditor/Development/Makefile.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/TL_StealthGameEditor/Development/Makefile.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/TL_StealthGameEditor/Development/Metadata.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/TL_StealthGameEditor/Development/Metadata.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/TL_StealthGameEditor/Development/TL_StealthGameEditor.uhtmanifest" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/TL_StealthGameEditor/Development/TL_StealthGameEditor.uhtmanifest" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TL_StealthGame/Definitions.TL_StealthGame.h" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TL_StealthGame/Definitions.TL_StealthGame.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TL_StealthGame/TL_StealthGame.cpp.obj.response" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TL_StealthGame/TL_StealthGame.cpp.obj.response" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TL_StealthGame/TL_StealthGame.init.gen.cpp.obj.response" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TL_StealthGame/TL_StealthGame.init.gen.cpp.obj.response" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TL_StealthGame/TL_StealthGameCharacter.cpp.obj.response" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TL_StealthGame/TL_StealthGameCharacter.cpp.obj.response" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TL_StealthGame/TL_StealthGameCharacter.gen.cpp.obj.response" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TL_StealthGame/TL_StealthGameCharacter.gen.cpp.obj.response" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TL_StealthGame/TL_StealthGameGameMode.cpp.obj.response" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TL_StealthGame/TL_StealthGameGameMode.cpp.obj.response" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TL_StealthGame/TL_StealthGameGameMode.gen.cpp.obj.response" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TL_StealthGame/TL_StealthGameGameMode.gen.cpp.obj.response" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TL_StealthGame/TL_StealthGameHUD.cpp.obj.response" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TL_StealthGame/TL_StealthGameHUD.cpp.obj.response" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TL_StealthGame/TL_StealthGameHUD.gen.cpp.obj.response" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TL_StealthGame/TL_StealthGameHUD.gen.cpp.obj.response" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TL_StealthGame/TL_StealthGameProjectile.cpp.obj.response" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TL_StealthGame/TL_StealthGameProjectile.cpp.obj.response" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TL_StealthGame/TL_StealthGameProjectile.cpp.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TL_StealthGame/TL_StealthGameProjectile.cpp.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TL_StealthGame/TL_StealthGameProjectile.gen.cpp.obj.response" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TL_StealthGame/TL_StealthGameProjectile.gen.cpp.obj.response" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TL_StealthGame/UE4Editor-TL_StealthGame.dll.response" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TL_StealthGame/UE4Editor-TL_StealthGame.dll.response" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TL_StealthGame/UE4Editor-TL_StealthGame.lib.response" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Development/TL_StealthGame/UE4Editor-TL_StealthGame.lib.response" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/TL_StealthGame/TL_StealthGame.init.gen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/TL_StealthGame/TL_StealthGame.init.gen.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/TL_StealthGame/TL_StealthGameProjectile.gen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/TL_StealthGame/TL_StealthGameProjectile.gen.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/TL_StealthGame/TL_StealthGameProjectile.generated.h" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/TL_StealthGame/TL_StealthGameProjectile.generated.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/TL_StealthGame/Timestamp" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/Build/Win64/UE4Editor/Inc/TL_StealthGame/Timestamp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/CachedAssetRegistry.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/CachedAssetRegistry.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/ProjectFiles/TL_StealthGame.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/ProjectFiles/TL_StealthGame.vcxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/ProjectFiles/TL_StealthGame.vcxproj.filters" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/ProjectFiles/TL_StealthGame.vcxproj.filters" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/ProjectFiles/UE4.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/ProjectFiles/UE4.vcxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Intermediate/ProjectFiles/UE4.vcxproj.filters" beforeDir="false" afterPath="$PROJECT_DIR$/Intermediate/ProjectFiles/UE4.vcxproj.filters" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Config/Windows/EditorPerProjectUserSettings.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Config/Windows/EditorPerProjectUserSettings.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Config/Windows/Engine.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Config/Windows/Engine.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Saved/Logs/TL_StealthGame.log" beforeDir="false" afterPath="$PROJECT_DIR$/Saved/Logs/TL_StealthGame.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TL_StealthGame/TL_StealthGameProjectile.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TL_StealthGame/TL_StealthGameProjectile.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/TL_StealthGame/TL_StealthGameProjectile.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TL_StealthGame/TL_StealthGameProjectile.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TL_StealthGame.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/TL_StealthGame.uproject" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/FirstPersonCPP/Maps/FirstPersonExampleMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/FirstPersonCPP/Maps/FirstPersonExampleMap.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/P_fire.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TL_StealthGame/ObjectiveActor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TL_StealthGame/ObjectiveActor.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/TL_StealthGame/ObjectiveActor.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/TL_StealthGame/ObjectiveActor.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +44,7 @@
     <setting file="file://$PROJECT_DIR$/Source/TL_StealthGame/TL_StealthGame.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TL_StealthGame/ObjectiveActor.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TL_StealthGame/ObjectiveActor.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../UE_4.25/Engine/Source/Runtime/Engine/Classes/GameFramework/Actor.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/TL_StealthGame/TL_StealthGameHUD.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../UE_4.25/Engine/Source/Runtime/Engine/Classes/Components/SphereComponent.h" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -86,8 +54,8 @@
         <option value="$PROJECT_DIR$/Source/TL_StealthGame/TL_StealthGameProjectile.cpp" />
         <option value="$PROJECT_DIR$/Source/TL_StealthGame/TL_StealthGameProjectile.h" />
         <option value="$PROJECT_DIR$/Source/TL_StealthGame/TL_StealthGameCharacter.cpp" />
-        <option value="$PROJECT_DIR$/Source/TL_StealthGame/ObjectiveActor.cpp" />
         <option value="$PROJECT_DIR$/Source/TL_StealthGame/ObjectiveActor.h" />
+        <option value="$PROJECT_DIR$/Source/TL_StealthGame/ObjectiveActor.cpp" />
       </list>
     </option>
   </component>
@@ -222,7 +190,7 @@
       <option name="presentableId" value="Default" />
       <updated>1591091368833</updated>
       <workItem from="1591091411033" duration="4155000" />
-      <workItem from="1591097434294" duration="713000" />
+      <workItem from="1591097434294" duration="2164000" />
     </task>
     <servers />
   </component>

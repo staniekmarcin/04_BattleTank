@@ -20,10 +20,17 @@ protected:
 
 	UPROPERTY(VisibleAnywhere, Category="Components")
 	USphereComponent* SphereComp;
+
+	UPROPERTY(EditDefaultsOnly, Category="FX")
+	UParticleSystem* PickupFX;
 	
 	virtual void BeginPlay() override;
 
+	void PlayEffects();
+
 public:	
 	virtual void Tick(float DeltaTime) override;
+
+	virtual void NotifyActorBeginOverlap(AActor* OtherActor) override;
 
 };
