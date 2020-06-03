@@ -8,6 +8,9 @@
 
 class UInputComponent;
 
+class UPawnNoiseEmitterComponent;
+
+	
 UCLASS(config=Game)
 class ATL_StealthGameCharacter : public ACharacter
 {
@@ -45,6 +48,8 @@ class ATL_StealthGameCharacter : public ACharacter
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "true"))
 	class UMotionControllerComponent* L_MotionController;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, meta = (AllowPrivateAccess = "AI"))
+	UPawnNoiseEmitterComponent* NoiseEmitterComp;
 public:
 	ATL_StealthGameCharacter();
 
