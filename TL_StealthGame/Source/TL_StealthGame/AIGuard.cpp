@@ -20,6 +20,7 @@ void AAIGuard::BeginPlay()
 	Super::BeginPlay();
 	PawnSensingComp->OnHearNoise.AddDynamic(this, &AAIGuard::OnNoiseHeard); // In BeginPlay cause some bug
 
+	OriginRotation = GetActorRotation();
 }
 
 void AAIGuard::OnPawnSeen(APawn* SeenPawn)
@@ -35,6 +36,29 @@ void AAIGuard::OnNoiseHeard(APawn* NoiseInstigator, const FVector& Location, flo
 {
 	DrawDebugSphere(GetWorld(), Location, 32.0f, 12, FColor::Blue, false, 10.0f);
 	UE_LOG(LogTemp, Log, TEXT("HEAR YOU"));
+
+	FVector Direction = Location - GetActorLocation();
+	Direction.Normalize();
+
+	FRotator NewLookAt = FRotationMatrix::MakeFromX(Direction).Rotator();
+	NewLookAt.Pitch = 0;
+	NewLookAt.Roll = 0;
+
+	SetActorRotation(NewLookAt);
+
+	GetWorldTimerManager().ClearTimer(TimerHandle_ResetOrientation);
+	GetWorldTimerManager().SetTimer(
+		TimerHandle_ResetOrientation,
+		this,
+		&AAIGuard::ResetOrientation,
+		3.0f
+		);
+
+}
+
+void AAIGuard::ResetOrientation()
+{
+	SetActorRotation(OriginRotation);
 }
 
 void AAIGuard::Tick(float DeltaTime)
