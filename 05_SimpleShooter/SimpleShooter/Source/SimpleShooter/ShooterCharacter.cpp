@@ -1,7 +1,7 @@
 
 
 #include "ShooterCharacter.h"
-
+#include "Components/CapsuleComponent.h"
 #include "Gun.h"
 
 AShooterCharacter::AShooterCharacter()
@@ -57,7 +57,14 @@ float AShooterCharacter::TakeDamage(float DamageAmount, FDamageEvent const& Dama
 
 	UE_LOG(LogTemp, Warning,TEXT("Health left: %f"), Health);
 	
+
+	if (IsDead())
+	{
+		DetachFromControllerPendingDestroy();
+		GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+	}
 	return DamageToApply;
+
 }
 
 void AShooterCharacter::MoveForward(float AxisValue)
