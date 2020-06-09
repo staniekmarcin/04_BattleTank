@@ -28,6 +28,7 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	void Shoot();
 
 private:
 	void MoveForward(float AxisValue);	
@@ -37,7 +38,6 @@ private:
 	void LookUpRate(float AxisValue);
 	void LookRightRate(float AxisValue);
 
-	void Shoot();
 	
 	UPROPERTY(EditAnywhere)
 	float RotationRate = 10;
