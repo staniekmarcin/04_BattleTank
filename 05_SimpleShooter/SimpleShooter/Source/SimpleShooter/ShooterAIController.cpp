@@ -2,6 +2,8 @@
 
 
 #include "ShooterAIController.h"
+
+#include "ShooterCharacter.h"
 #include "Kismet/GameplayStatics.h"
 
 #include "BehaviorTree/BlackboardComponent.h"
@@ -11,6 +13,17 @@ void AShooterAIController::Tick(float DeltaSeconds)
     Super::Tick(DeltaSeconds);
 
     // TODO turn off focus when AI is dead
+}
+
+bool AShooterAIController::IsDead() const
+{
+    AShooterCharacter* ControlledCharacter= Cast<AShooterCharacter>(GetPawn());
+    if (ControlledCharacter != nullptr)
+    {
+        return ControlledCharacter->IsDead();
+    }
+
+    return true;
 }
 
 void AShooterAIController::BeginPlay()
