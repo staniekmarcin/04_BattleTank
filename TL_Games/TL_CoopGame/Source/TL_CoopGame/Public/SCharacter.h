@@ -2,11 +2,11 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
-
 #include "SCharacter.generated.h"
 
 class UCameraComponent;
 class USpringArmComponent;
+class ASWeapon;
 
 UCLASS()
 class TL_COOPGAME_API ASCharacter : public ACharacter
@@ -30,8 +30,27 @@ protected:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Components")
 	USpringArmComponent* SpringArmComp;
+
+	bool bWantsToZoom;
+	UPROPERTY(EditDefaultsOnly, Category = "Player", meta = (ClampMin = 0.0, ClampMax = 100))
+	float ZoomInterpSpeed;
+	UPROPERTY(EditDefaultsOnly, Category = "Player")
+	float ZommedFOV;
+	float DefaultFOV;
+	void BeginZoom();
+	void EndZoom();
+
+	ASWeapon* CurrentWeapon;
+
+	UPROPERTY(EditDefaultsOnly,Category="Player")
+	TSubclassOf<ASWeapon> StarterWeaponClass;
+
+	UPROPERTY(VisibleDefaultsOnly,Category="Player")
+	FName WeaponAttachSockeTName;
 	
-	public:	
+	void StartFire();
+	void StopFire();
+public:	
 	virtual void Tick(float DeltaTime) override;
 
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
