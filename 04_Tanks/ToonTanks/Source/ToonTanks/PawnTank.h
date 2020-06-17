@@ -33,6 +33,18 @@ private:
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Components", meta = (AllowPrivateAccess = "true"))
     UCameraComponent* CameraComp;
 
+    float MoveSpeed =100.0f;
+    float RotateSpeed= 100.0f;
+    
+    FVector MoveDirection;
+    FQuat RotationDirection;
+
+    void CalculateMoveInput(float Value);
+    void CalculateRotateInput(float Value);
+    
+    void Move();
+    void Rotate();
+    
 protected:
     virtual void BeginPlay() override;
 
