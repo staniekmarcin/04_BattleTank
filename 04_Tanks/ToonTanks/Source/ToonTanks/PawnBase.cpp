@@ -3,6 +3,7 @@
 #include "PawnBase.h"
 
 #include "Kismet/KismetMathLibrary.h"
+#include "ToonTanks/Actors/ProjectileBase.h"
 
 APawnBase::APawnBase()
 {
@@ -38,6 +39,16 @@ void APawnBase::Fire()
 	// Spawn projectile at spawnpoint
 	UE_LOG(LogTemp,Warning,TEXT("FIRE"));
 
+	
+	if (ProjectileClass)
+	{
+		FVector SpawnLocation = ProjectileSpawnPoint->GetComponentLocation();
+		FRotator SpawnRotation = ProjectileSpawnPoint->GetComponentRotation();
+		
+		AProjectileBase* TempProjectile = GetWorld()->SpawnActor<AProjectileBase>(ProjectileClass, SpawnLocation, SpawnRotation);
+		TempProjectile->SetOwner(this);
+	}
+	
 }
 
 void APawnBase::HandleDestruction()
