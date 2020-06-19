@@ -2,7 +2,7 @@
 part of game development course in UE4.
 
 ### TL_Games
-Shooters from TL<sub><sup>UE 4.25</sup></sub>
+Shooters from TL <sub><sup>UE 4.25</sup></sub>
 ### 05_SimpleShooter
 third-person shooter (without AssetPacks) <sub><sup>UE 4.25</sup></sub>
 ### BP_Games
@@ -11,8 +11,9 @@ basics of UE4 with Blueprints <sub><sup>UE 4.25</sup></sub>
 3D painting interface <sub><sup>UE 4.24.3</sup></sub>
 ### VR_ArchitecExplorer
 mostly about basics of VR controller and climbing <sub><sup>UE 4.24.3</sup></sub>
-### 04_BattleTank  
+### 04_Tanks
 shooting tank vs AI <sub><sup>UE 4.24.3</sup></sub>
+small tanks <sub><sup>UE 4.25</sup></sub>
 ### 03_BuldingEscape  
 level building and overlaping actors <sub><sup>UE 4.24.3</sup></sub>
 ### 02_BullsCowsGame  
