@@ -25,6 +25,11 @@ void APawnTank::HandleDestruction()
 
 	// TODO Hide Player with new function
 	//Destroy();
+
+	bAlive = false;
+
+	SetActorHiddenInGame(true);
+	SetActorTickEnabled(false);
 }
 
 void APawnTank::Tick(float DeltaTime)
@@ -51,6 +56,11 @@ void APawnTank::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 	PlayerInputComponent->BindAxis("Turn", this, &APawnTank::CalculateRotateInput);
 
 	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &APawnTank::Fire);
+}
+
+bool APawnTank::GetPlayerAlive()
+{
+	return bAlive;
 }
 
 void APawnTank::CalculateMoveInput(float Value)
