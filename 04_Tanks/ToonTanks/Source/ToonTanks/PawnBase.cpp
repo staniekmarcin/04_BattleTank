@@ -2,7 +2,10 @@
 
 #include "PawnBase.h"
 
+
+#include "Kismet/GameplayStatics.h"
 #include "Kismet/KismetMathLibrary.h"
+#include "Components/HealthComponent.h"
 #include "ToonTanks/Actors/ProjectileBase.h"
 
 APawnBase::APawnBase()
@@ -20,6 +23,9 @@ APawnBase::APawnBase()
 
 	ProjectileSpawnPoint = CreateDefaultSubobject<USceneComponent>(TEXT("Projectile Spawn Point"));
 	ProjectileSpawnPoint->SetupAttachment(TurretMesh);
+
+	HealthComp = CreateDefaultSubobject<UHealthComponent>(TEXT("Health Component"));
+	
 }
 
 
@@ -54,7 +60,10 @@ void APawnBase::Fire()
 
 void APawnBase::HandleDestruction()
 {
-
+	if (DeathParticle)
+	{
+		UGameplayStatics::SpawnEmitterAtLocation(this, DeathParticle, GetActorLocation(), FRotator::ZeroRotator);
+	}
 }
 
 void APawnBase::PawnDestroyed()

@@ -34,14 +34,13 @@ void AProjectileBase::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UP
 	{
 		UGameplayStatics::ApplyDamage(OtherActor, Damage, MyOwner->GetInstigatorController(), this, DamageType);
 
+		if (HitParticle)
+		{
+			UGameplayStatics::SpawnEmitterAtLocation(this, HitParticle, GetActorLocation(), FRotator::ZeroRotator);
+		}
 		Destroy();
 		// UE_LOG(LogTemp, Warning, TEXT("ONHIT EVENT AFTER CHECK"));
 	}
-
-	// TODO Efects
-
-	
-
 }
 
 void AProjectileBase::BeginPlay()

@@ -7,6 +7,8 @@
 #include "GameFramework/Pawn.h"
 #include "PawnBase.generated.h"
 
+class UHealthComponent;
+
 UCLASS()
 class TOONTANKS_API APawnBase : public APawn
 {
@@ -26,8 +28,14 @@ private:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Components", meta = (AllowPrivateAccess = "true"))
 	USceneComponent* ProjectileSpawnPoint;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="Components", meta = (AllowPrivateAccess = "true"))
+	UHealthComponent* HealthComp;
+	
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Projectile Type", meta = (AllowPrivateAccess = "true"))
 	TSubclassOf<AProjectileBase> ProjectileClass;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Effects", meta = (AllowPrivateAccess = "true"))
+	UParticleSystem* DeathParticle;
 	
 public:
 	APawnBase();
